@@ -22,7 +22,6 @@
     },
     "required": [
         "id",
-        "title",
         "type",
         "coordinate"
     ],

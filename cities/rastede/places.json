@@ -1,11 +1,10 @@
 [
     {
         "id": "be579615-d333-4837-a6fe-5378d4a0fec9",
-        "title": "Mülleimer",
         "type": "trashCan",
         "coordinate": {
-            "latitude": 123,
-            "longitude": 12.4
+            "latitude": 53.247236670619635,
+            "longitude": 8.20521931240647
         }
     }
 ]
