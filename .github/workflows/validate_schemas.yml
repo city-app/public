@@ -11,6 +11,7 @@ permissions:
 
 jobs:
   validate:
+    name: Validate Schemas
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
@@ -19,9 +20,10 @@ jobs:
       with:
         ruby-version: "3.0"
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+    - name: Install Gems
+      run: |
+        gem install json_schemer
     - name: Validate Schemas
       run: |
-        sudo apt-get -yqq install libpq-dev
-        gem install json_schemer
         json_schemer schemas/cities.schema.json cities.json
         json_schemer schemas/places.schema.json cities/rastede/places.json
