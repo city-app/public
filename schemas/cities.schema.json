@@ -1,0 +1,11 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "cities.schema.json",
+    "title": "Cities",
+    "description": "Cities in city app",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "$ref": "city.schema.json"
+    }
+}

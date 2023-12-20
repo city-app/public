@@ -1,0 +1,11 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "places.schema.json",
+    "title": "Places",
+    "description": "Places in a city",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "$ref": "place.schema.json"
+    }
+}

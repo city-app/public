@@ -1,0 +1,24 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "global.schema.json",
+    "title": "Global Schema",
+    "$defs": {
+        "coordinate": {
+            "type": "object",
+            "title": "Coordinate",
+            "description": "Any coordinate",
+            "properties": {
+                "latitude": {
+                    "type": "number"
+                },
+                "longitude": {
+                    "type": "number"
+                }
+            },
+            "required": [
+                "latitude",
+                "longitude"
+            ]
+        }
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "city.schema.json",
+    "title": "City",
+    "description": "A city for city app",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "string",
+            "description": "City Identifier which is used in file structure"
+        },
+        "name": {
+            "type": "string",
+            "description": "Name of a city"
+        }
+    },
+    "required": [
+        "id",
+        "name"
+    ]
+}

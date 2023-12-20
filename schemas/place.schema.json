@@ -1,0 +1,45 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "place.schema.json",
+    "title": "Place",
+    "description": "A place in a city",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "string",
+            "description": "UUID of place"
+        },
+        "title": {
+            "type": "string",
+            "description": "Title of a place"
+        },
+        "type": {
+            "$ref": "#/$defs/placeType"
+        },
+        "coordinate": {
+            "$ref": "global.schema.json#/$defs/coordinate"
+        }
+    },
+    "required": [
+        "id",
+        "title",
+        "type",
+        "coordinate"
+    ],
+    "$defs": {
+        "placeType": {
+            "enum": [
+                "trashCan",
+                "seat",
+                "publicRestroom",
+                "privateRestroom",
+                "doctor",
+                "cafe",
+                "restaurant",
+                "glasCollection",
+                "clothingCollection",
+                "placeOfInterest"
+            ]
+        }
+    }
+}
